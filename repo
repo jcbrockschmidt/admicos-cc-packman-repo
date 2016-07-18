@@ -13,7 +13,7 @@ name = bfluac
 		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/bfluac/bfluac.lua
 		filename = bfluac
     category = utility brainfuck
-    version = 1.0.0
+    version = 1.0.1
     size = 3769
 	dependencies = none
 end
