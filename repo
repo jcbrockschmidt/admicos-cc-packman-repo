@@ -17,3 +17,13 @@ name = bfluac-helloworld
     size = 12288
 	dependencies = none
 end
+
+name = bundel
+    type = raw
+		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/bundel/bundel.lua
+		filename = bundel
+    category = utility bundle
+    version = 1.0.0
+    size = 4096
+	dependencies = none
+end
