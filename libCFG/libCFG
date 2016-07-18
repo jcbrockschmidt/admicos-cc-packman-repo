@@ -1,0 +1,35 @@
+function readConfigRaw(raw)
+	keys = {}
+
+	string.gsub( raw, '([^#:\n]-):%s*([^\n]+)', 
+		function( name, value )
+   			keys[name] = value
+		end)
+
+	return keys
+end
+
+function readConfig(file)
+	cfgF = fs.open(file, "r")
+		cfg = cfgF.readAll()
+	cfgF.close();
+	
+	return readConfigRaw(cfg)
+end
+
+function writeConfig(file, confTable)
+	local contents = [[
+#This configuration file has been rewritten using libCFG.
+#You should use the program that rewrote it to modify it. 
+	]]
+
+	for k, v in pairs(confTable) do
+		contents = contents .. "\n" .. k .. ": " .. v
+	end
+
+	confFile = fs.open(file, "w")
+		confFile.write(contents)
+	confFile.close()
+
+	contents = nil
+end
