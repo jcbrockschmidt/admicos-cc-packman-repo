@@ -1,0 +1,19 @@
+name = bfluac
+    type = raw
+		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/bfluac/bfluac.lua
+		filename = bfluac
+    category = utility brainfuck
+    version = 1.0.0
+    size = 4096
+	dependencies = none
+end
+
+name = bfluac-helloworld
+    type = raw
+		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/bfluac-helloworld/bfluac-helloworld.lua
+		filename = bfluac-helloworld
+    category = brainfuck
+    version = 1.0.0
+    size = 12288
+	dependencies = none
+end
