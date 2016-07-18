@@ -109,7 +109,7 @@ term.setCursorPos(1, h - 3) term.clearLine()
 term.setCursorPos(x, y)]])
 		end
 		print("\nAppending source...")
-		o.writeLine("--[[ Original: " .. code .. "]]")
+		o.writeLine("-- Original: " .. code .. "")
 	o.close()
 	print("Done.")
 end
