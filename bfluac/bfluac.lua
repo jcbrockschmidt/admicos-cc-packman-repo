@@ -141,4 +141,16 @@ if #args >= 1 then
 	f.close()
 
 	interpet(code)
+else
+	print([[bfluac -- convert bf to lua
+
+HOW TO USE
+    bfluac.lua <file containing bf code> [extra arguments]
+    This will save the lua code to <filename>.bf.lua
+
+ARGUMENTS
+    -memLimit <number> allows you the set maximum value of a memory block (default 28-1)
+    -memBlocks <number> allows you the set how many memory blocks will be available for the program. Too low might cause crashes (default: 17)
+    -dbgSleep <number> how many seconds should the program wait before executing the next instruction (debug only) (default: 0.005)
+    +dbg enables debug mode for the program]])
 end
