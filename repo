@@ -5,7 +5,7 @@ name = aconf
     category = utility configuration
     version = 1.0.0
     size = 1313
-	dependencies = admicos/libCFG
+    dependencies = admicos/libcfg
 end
 
 name = bfluac
@@ -38,12 +38,13 @@ name = bundel
 	dependencies = none
 end
 
-name = libCFG
+name = libcfg
     type = raw
 		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/libCFG/libCFG
 		filename = libCFG
     category = api config
     version = 1.0.0
     size = 652
-	dependencies = none
+    dependencies = none
+    target = /usr/apis
 end
