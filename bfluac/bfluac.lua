@@ -27,7 +27,7 @@ local ptr = 1;
 ]])
 		if dbg then
 			print("Writing debug functions...")
-			
+
 			semstr = "drawMemory() sleep(" .. dbgSleep .. ") "
 			o.writeLine([[
 local w, h = term.getSize()
@@ -38,7 +38,7 @@ local function drawBFInst(c)
 	x, y = term.getCursorPos()
 	term.setCursorPos(1 + drewInst, h)
 	drewInst = drewInst + 1
-	
+
 	if drewInst == w then
 		term.clearLine()
 		drewInst = 1
@@ -99,10 +99,10 @@ drawMemory()
 				write(c)
 			end
 		end)
-		
+
 		if dbg then
 			write("\nAppending memory display cleaner...")
-			o.writeLine([[local x, y = term.getCursorPos() 
+			o.writeLine([[local x, y = term.getCursorPos()
 term.setCursorPos(1, h) term.clearLine()
 term.setCursorPos(1, h - 2) term.clearLine()
 term.setCursorPos(1, h - 3) term.clearLine()
@@ -150,7 +150,7 @@ HOW TO USE
 
 ARGUMENTS
     -memLimit <number> allows you the set maximum value of a memory block (default 28-1)
-    -memBlocks <number> allows you the set how many memory blocks will be available for the program. Too low might cause crashes (default: 17)
+    -memBlocks <number> allows you the set how many memory blocks will be available for the program. Too low might cause crashes (default: 2^8-1)
     -dbgSleep <number> how many seconds should the program wait before executing the next instruction (debug only) (default: 0.005)
     +dbg enables debug mode for the program]])
 end
