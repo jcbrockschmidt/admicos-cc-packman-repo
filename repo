@@ -6,6 +6,7 @@ name = aconf
     version = 1.0.0
     size = 1313
     dependencies = admicos/libcfg
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25456-libcfg-a-basic-configuration-api/
 end
 
 name = bfluac
@@ -16,6 +17,7 @@ name = bfluac
     version = 1.0.2
     size = 3769
 	dependencies = none
+    --link = http://www.computercraft.info/forums2/index.php?/topic/27197-bfluac-convert-brainfuck-programs-to-lua/
 end
 
 name = bfluac-helloworld
@@ -26,6 +28,7 @@ name = bfluac-helloworld
     version = 1.0.0
     size = 12311
 	dependencies = none
+    --link = http://www.computercraft.info/forums2/index.php?/topic/27197-bfluac-convert-brainfuck-programs-to-lua/
 end
 
 name = bundel
@@ -36,6 +39,7 @@ name = bundel
     version = 1.0.0
     size = 3419
 	dependencies = none
+    --link = http://www.computercraft.info/forums2/index.php?/topic/26350-bundel-a-program-to-bundle-multiple-files-to-one-self-extracting-program
 end
 
 name = libcfg
@@ -47,4 +51,5 @@ name = libcfg
     size = 652
     dependencies = none
     target = /usr/apis
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25456-libcfg-a-basic-configuration-api/
 end
