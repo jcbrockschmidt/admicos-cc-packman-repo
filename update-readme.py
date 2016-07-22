@@ -22,6 +22,7 @@ def main():
 
 	print("Compiling regexes")
 	packages = re.compile(r"(([^file]|^)name?\s=?\s.*)") # Gets all package names.
+
 	versions = re.findall(re.compile(r"(version?\s=?\s.*)"), repoContents) # Gets all package versions.
 	frmlinks = re.findall(re.compile(r"(--link?\s=?\s.*)"), repoContents) # Gets package links.
 
@@ -29,8 +30,20 @@ def main():
 	cnt = 0
 	readme_packages = ""
 	for package in re.findall(packages, repoContents): # This was worse before, trust me.
-		readme_packages = readme_packages + "* [" + package[0].split("=")[1].strip() + "](" + frmlinks[cnt].split("=")[1].strip() + ") " + versions[cnt].split("=")[1].strip() + "\n"
-		cnt += 1
+		try:
+			readme_packages = readme_packages + "* [" + package[0].split("=")[1].strip() + "](" + frmlinks[cnt].split("=")[1].strip() + ") " + versions[cnt].split("=")[1].strip() + "\n"
+			cnt += 1
+		except IndexError as ie:
+			print("""
+You either forgot to version your package, or forgot a link for it.
+You can add a link by creating a \"--link\" key before \"end\"
+
+Example:
+	dependencies = none
+	--link = https://computercraft.info/forums2/MYCOOLPACKAGE-thread
+
+IndexError: """ + str(ie))
+			return 1
 	cnt = None
 
 	print("Saving")
