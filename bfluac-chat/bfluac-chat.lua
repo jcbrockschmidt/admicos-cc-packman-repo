@@ -24,7 +24,7 @@ local function runbf(bfcode, sender)
   shell.run("bfluac .bf-" .. sender .. " -printMem -yieldMore")
 
   write = function(a) outBuf = outBuf .. a end
-  print = write
+  print = function(a) chatBox.say(sender .. "> " .. outBuf) outBuf = "" end
 
   chatBox.say("----RUNNING----")
   shell.run(".bf-" .. sender .. ".bf.lua")
@@ -35,6 +35,8 @@ local function runbf(bfcode, sender)
   fs.delete(".bf-" .. sender .. ".bf.lua")
   fs.delete(".bf-" .. sender)
   chatBox.say(sender .. "> " .. outBuf)
+  outBuf = ""
+
 end
 
 local function main()
