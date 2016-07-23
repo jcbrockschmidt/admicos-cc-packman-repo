@@ -85,7 +85,7 @@ local function main()
         if cprx == "__bf" then
             if carg == nil or ccmd == nil then
                 log.writeLine("[" .. chatEvent[3] .. ":help]")
-                chatBox.say("__bf <run> <bf code> --WIP")
+                chatBox.say("__bf <run OR runpaste> <bf code OR paste code> --Mostly done at this point")
             else
                 log.writeLine("[" .. chatEvent[3] .. ":" .. ccmd .. "] " .. (unpack(carg) or ""))
                 if ccmd == "stop" then
@@ -96,6 +96,8 @@ local function main()
                     end
                 elseif ccmd == "run" then
                     runbf(carg[1], chatEvent[3])
+                elseif ccmd == "runpaste" then
+                    runbfpaste(carg[1], chatEvent[3])
                 else
                     chatBox.say(ccmd .. " is not a bfluac command")
                 end
