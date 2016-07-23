@@ -36,7 +36,7 @@ local function compilebf(sender)
         errMsg = split(err, ":")
         errMsg = errMsg[#errMsg]
 
-        chatBox.say("§6" .. sender .. ">§c" .. errMsg)
+        chatBox.say(("§6" .. sender .. ">§c" .. errMsg):gsub(" ", "§c"))
         if term.isColor() then term.setTextColor(colors.red) end
         print(err)
         if term.isColor() then term.setTextColor(colors.white) end
