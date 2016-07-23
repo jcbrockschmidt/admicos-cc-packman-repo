@@ -1,4 +1,5 @@
 #!/bin/bash
+@echo off
 
 git status
 git add -A
