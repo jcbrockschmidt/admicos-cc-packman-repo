@@ -30,7 +30,10 @@ local function runbf(bfcode, sender)
     local ok, err = pcall(function() loadfile(".bf-" .. sender .. ".bf.lua")() end)
 
     if not ok then
-        chatBox.say("§6" .. sender .. "> §c" .. err)
+        errMsg = split(err, ":")
+        errMsg = errMsg[#errMsg]
+
+        chatBox.say("§6" .. sender .. "> §c" .. errMsg)
     else
         chatBox.say("§6" .. sender .. "> §f" .. outBuf)
         outBuf = ""
