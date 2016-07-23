@@ -13,26 +13,24 @@ local function split(str, splitter)
     return t
 end
 
-local function runbf(bfcode, sender)
-    local bffile = fs.open(".bf-" .. sender, "w")
-    bffile.write(bfcode)
-    bffile.close()
-
+local function runbfraw()
     oWR = write
     oPR = print
 
+    write = function(a) outBuf = outBuf .. a end
+    print = function(a) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
+
+    loadfile(".bf-" .. sender .. ".bf.lua")()
+
+    write = oWR
+    print = oPR
+end
+
+local function compilebf(sender)
     shell.run("bfluac .bf-" .. sender .. " -printMem -yieldMore")
 
     chatBox.say("----RUNNING----")
-    local ok, err = pcall(function()
-        write = function(a) outBuf = outBuf .. a end
-        print = function(a) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
-
-        loadfile(".bf-" .. sender .. ".bf.lua")()
-
-        write = oWR
-        print = oPR
-    end)
+    local ok, err = pcall(runbfraw)
 
     if not ok then
         errMsg = split(err, ":")
@@ -46,6 +44,29 @@ local function runbf(bfcode, sender)
 
     fs.delete(".bf-" .. sender .. ".bf.lua")
     fs.delete(".bf-" .. sender)
+end
+
+local function runbfpaste(paste, sender)
+    local pastefile = http.get("http://pastebin.com/raw/" .. textutils.urlEncode(paste))
+        if not pastefile then
+            chatBox.say("§6" .. sender .. ">§c Paste: " .. paste .. " not found!")
+            return;
+        end
+
+        local bfcode = pastefile.readAll()
+    pastefile.close()
+
+    local bffile = fs.open(".bf-" .. sender, "w")
+        bffile.write(bfcode)
+    bffile.close()
+    compilebf(sender)
+end
+
+local function runbf(bfcode, sender)
+    local bffile = fs.open(".bf-" .. sender, "w")
+        bffile.write(bfcode)
+    bffile.close()
+    compilebf(sender)
 end
 
 local function main()
