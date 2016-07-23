@@ -3,6 +3,7 @@ local memLimit = (2^8) - 1
 local memBlocks = 17
 local dbgSleep = .005
 local dbg = false
+local printMem = false
 
 local args = { ... }
 local w, h = term.getSize()
@@ -25,6 +26,10 @@ local function interpet(code)
 local mem = {]] .. memBlockStr .. [[}
 local ptr = 1;
 ]])
+
+		if printMem then
+			o.writeLine([[local memStr = ""]])
+		end
 		if dbg then
 			print("Writing debug functions...")
 
@@ -108,6 +113,13 @@ term.setCursorPos(1, h - 2) term.clearLine()
 term.setCursorPos(1, h - 3) term.clearLine()
 term.setCursorPos(x, y)]])
 		end
+		if printMem then
+			write("\nAppending memory printing...")
+			o.writeLine([[for i = 1..#mem do
+				memStr = memStr .. mem[i] .. ", "
+			end
+			print(memStr)]])
+		end
 		print("\nAppending source...")
 		o.writeLine("-- Original: " .. code .. "")
 	o.close()
@@ -133,6 +145,9 @@ if #args >= 1 then
 		elseif args[i] == "+dbg" then
 			dbg = true
 			print("Debugging turned on.")
+		elseif args[i] == "-printMem" then
+			printMem = true
+			print("Memory printing turned on.")
 		end
 	end
 
@@ -152,5 +167,6 @@ ARGUMENTS
     -memLimit <number> allows you the set maximum value of a memory block (default 28-1)
     -memBlocks <number> allows you the set how many memory blocks will be available for the program. Too low might cause crashes (default: 2^8-1)
     -dbgSleep <number> how many seconds should the program wait before executing the next instruction (debug only) (default: 0.005)
-    +dbg enables debug mode for the program]])
+	-printMem prints bf memory at the end of program
+	+dbg enables debug mode for the program]])
 end
