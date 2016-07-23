@@ -115,7 +115,7 @@ term.setCursorPos(x, y)]])
 		end
 		if printMem then
 			write("\nAppending memory printing...")
-			o.writeLine([[for i = 1..#mem do
+			o.writeLine([[for i = 1, #mem do
 				memStr = memStr .. mem[i] .. ", "
 			end
 			print(memStr)]])
