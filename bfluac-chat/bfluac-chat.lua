@@ -29,6 +29,8 @@ local function runbf(bfcode, sender)
   chatBox.say("----RUNNING----")
   local ok, err = pcall(shell.run, ".bf-" .. sender .. ".bf.lua")
 
+  chatBox.say(err)
+
   if not ok then
     chatBox.say("§6" .. sender .. "> §c" .. err)
   end
