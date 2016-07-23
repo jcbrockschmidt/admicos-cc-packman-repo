@@ -15,6 +15,17 @@ local function split(str, splitter)
     return t
 end
 
+local function safeString(text)
+   local newText = {}
+   for i = 1, #text do
+       local val = text:byte(i)
+       newText[i] = (val > 31 and val < 127) and val or 63
+   end
+   return string.char(unpack(newText))
+end
+
+
+
 local function runbfraw(sender)
     loadfile(".bf-" .. sender .. ".bf.lua")()
 end
@@ -26,7 +37,7 @@ local function compilebf(sender)
 
     write = function(a) outBuf = outBuf .. a end
     print = function(a)
-        chatBox.say("§6" .. sender .. "> §f" .. outBuf)
+        chatBox.say("§6" .. sender .. "> §f" .. safeString(outBuf))
         outBuf = a
     end
 
