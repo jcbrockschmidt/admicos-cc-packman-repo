@@ -24,10 +24,14 @@ local function runbf(bfcode, sender)
   shell.run("bfluac .bf-" .. sender .. " -printMem -yieldMore")
 
   write = function(a) outBuf = outBuf .. a end
-  print = function(a) chatBox.say(sender .. "> " .. outBuf) outBuf = a end
+  print = function(a) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
 
   chatBox.say("----RUNNING----")
-  shell.run(".bf-" .. sender .. ".bf.lua")
+  local ok, err = pcall(function() shell.run(".bf-" .. sender .. ".bf.lua") end)
+
+  if not ok then
+    chatBox.say("§6" .. sender .. "> §c" .. err)
+  end
 
   write = oWR
   print = oPR
@@ -35,7 +39,7 @@ local function runbf(bfcode, sender)
   fs.delete(".bf-" .. sender .. ".bf.lua")
   fs.delete(".bf-" .. sender)
 
-  chatBox.say(sender .. "> " .. outBuf)
+  chatBox.say("§6" .. sender .. "> §f" .. outBuf)
   outBuf = ""
 
 end
