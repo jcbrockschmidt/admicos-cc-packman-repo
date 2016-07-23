@@ -35,9 +35,9 @@ local function compilebf(sender)
 
     chatBox.say("----RUNNING----")
 
-    write = function(a) outBuf = outBuf .. a end
+    write = function(a) outBuf = outBuf .. safeString(a) end
     print = function(a)
-        chatBox.say("\194\1676" .. sender .. "> \194\167f" .. safeString(outBuf))
+        chatBox.say("\194\1676" .. sender .. "> \194\167f" .. outBuf)
         --chatBox.say("|6" .. sender .. "> |f" .. safeString(outBuf))
         outBuf = a
     end
