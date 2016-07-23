@@ -30,6 +30,11 @@ local ptr = 1;
 		if printMem then
 			o.writeLine([[local memStr = ""]])
 		end
+
+		if yieldMore then
+			semstr = "os.sleep(0)"
+		end
+
 		if dbg then
 			print("Writing debug functions...")
 
@@ -148,6 +153,9 @@ if #args >= 1 then
 		elseif args[i] == "-printMem" then
 			printMem = true
 			print("Memory printing turned on.")
+		elseif args[i] == "-yieldMore" then
+			yieldMore = true
+			print("Yielding more...")
 		end
 	end
 
