@@ -37,7 +37,8 @@ local function compilebf(sender)
 
     write = function(a) outBuf = outBuf .. a end
     print = function(a)
-        chatBox.say("§6" .. sender .. "> §f" .. safeString(outBuf))
+        --chatBox.say("§6" .. sender .. "> §f" .. safeString(outBuf))
+        chatBox.say("|6" .. sender .. "> |f" .. safeString(outBuf))
         outBuf = a
     end
 
