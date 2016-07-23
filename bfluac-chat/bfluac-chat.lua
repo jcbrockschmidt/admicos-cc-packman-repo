@@ -56,8 +56,8 @@ local function compilebf(sender)
         print(err)
         if term.isColor() then term.setTextColor(colors.white) end
     else
-        chatBox.say("§6" .. sender .. "> §f" .. safeString(outBuf))
-        --chatBox.say("|6" .. sender .. "> |f" .. safeString(outBuf))
+        --chatBox.say("§6" .. sender .. "> §f" .. safeString(outBuf))
+        chatBox.say("|6" .. sender .. "> |f" .. safeString(outBuf))
         outBuf = ""
     end
 
