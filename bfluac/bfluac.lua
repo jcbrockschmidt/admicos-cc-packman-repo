@@ -176,5 +176,6 @@ ARGUMENTS
     -memBlocks <number> allows you the set how many memory blocks will be available for the program. Too low might cause crashes (default: 2^8-1)
     -dbgSleep <number> how many seconds should the program wait before executing the next instruction (debug only) (default: 0.005)
 	-printMem prints bf memory at the end of program
+	-yieldMore add more yields, useful for multiplayer
 	+dbg enables debug mode for the program]])
 end

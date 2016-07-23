@@ -20,7 +20,7 @@ local function runbf(bfcode, sender)
   oWR = write
   oPR = print
 
-  shell.run("bfluac .bf-" .. sender .. " -printMem")
+  shell.run("bfluac .bf-" .. sender .. " -printMem -yieldMore")
 
   write = function(a) chatBox.say(sender .. "> " .. a) end
   print = write
