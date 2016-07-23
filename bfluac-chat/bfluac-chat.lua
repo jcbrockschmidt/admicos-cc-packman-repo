@@ -4,6 +4,7 @@ local carg = nil
 local ccmd = nil
 local running = true
 local admin = "Admicos"
+local outBuf = ""
 
 local function split(str, splitter)
   local t = {}
@@ -22,8 +23,8 @@ local function runbf(bfcode, sender)
 
   shell.run("bfluac .bf-" .. sender .. " -printMem -yieldMore")
 
-  write = function(a) chatBox.say(sender .. "> " .. a) end
-  print = write
+  write = function(a) outBuf = outBuf + a end
+  print = function(a) chatBox.say(sender .. "> " .. outBuf) outBuf = "" end
 
   chatBox.say("----RUNNING----")
   shell.run(".bf-" .. sender .. ".bf.lua")
@@ -33,6 +34,7 @@ local function runbf(bfcode, sender)
 
   fs.delete(".bf-" .. sender .. ".bf.lua")
   fs.delete(".bf-" .. sender)
+  chatBox.say(sender .. "> " .. outBuf)
 end
 
 local function main()
