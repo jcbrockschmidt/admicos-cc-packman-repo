@@ -27,7 +27,9 @@ local function runbf(bfcode, sender)
   print = function(a) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
 
   chatBox.say("----RUNNING----")
-  local ok, err = pcall(shell.run, ".bf-" .. sender .. ".bf.lua")
+  local ok, err = pcall(function()
+    loadfile(".bf-" .. sender .. ".bf.lua")[1]()
+  end)
 
   chatBox.say(err)
 
