@@ -23,28 +23,29 @@ local function runbf(bfcode, sender)
 
     shell.run("bfluac .bf-" .. sender .. " -printMem -yieldMore")
 
-    write = function(a) outBuf = outBuf .. a end
-    print = function(a) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
-
     chatBox.say("----RUNNING----")
-    local ok, err = pcall(function() loadfile(".bf-" .. sender .. ".bf.lua")() end)
+    local ok, err = pcall(function()
+        write = function(a) outBuf = outBuf .. a end
+        print = function(a) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
+
+        loadfile(".bf-" .. sender .. ".bf.lua")()
+
+        write = oWR
+        print = oPR
+    end)
 
     if not ok then
         errMsg = split(err, ":")
         errMsg = errMsg[#errMsg]
 
-        chatBox.say("§6" .. sender .. "> §c" .. errMsg)
+        chatBox.say("§6" .. sender .. ">§c" .. errMsg)
     else
         chatBox.say("§6" .. sender .. "> §f" .. outBuf)
         outBuf = ""
     end
 
-    write = oWR
-    print = oPR
-
     fs.delete(".bf-" .. sender .. ".bf.lua")
     fs.delete(".bf-" .. sender)
-
 end
 
 local function main()
