@@ -18,7 +18,7 @@ local function runbfraw(sender)
     oPR = print
 
     write = function(a) outBuf = outBuf .. a end
-    print = function(a) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
+    print = function(a) print(outBuf) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
 
     loadfile(".bf-" .. sender .. ".bf.lua")()
 
