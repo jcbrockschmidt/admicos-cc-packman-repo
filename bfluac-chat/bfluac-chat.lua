@@ -35,13 +35,14 @@ local function compilebf(sender)
 
     chatBox.say("----RUNNING----")
 
+--[[
     write = function(a) outBuf = outBuf .. a end
     print = function(a)
         chatBox.say("§6" .. sender .. "> §f" .. safeString(outBuf))
         --chatBox.say("|6" .. sender .. "> |f" .. safeString(outBuf))
         outBuf = a
     end
-
+]]
     local ok, err = pcall(runbfraw, sender)
 
     write = oWR
