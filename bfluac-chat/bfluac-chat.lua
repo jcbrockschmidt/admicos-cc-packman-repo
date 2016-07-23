@@ -13,7 +13,7 @@ local function split(str, splitter)
     return t
 end
 
-local function runbfraw()
+local function runbfraw(sender)
     oWR = write
     oPR = print
 
@@ -30,7 +30,7 @@ local function compilebf(sender)
     shell.run("bfluac .bf-" .. sender .. " -printMem -yieldMore")
 
     chatBox.say("----RUNNING----")
-    local ok, err = pcall(runbfraw)
+    local ok, err = pcall(runbfraw, sender)
 
     if not ok then
         errMsg = split(err, ":")
