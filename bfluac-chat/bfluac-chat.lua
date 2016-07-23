@@ -5,6 +5,8 @@ local ccmd = nil
 local running = true
 local admin = "Admicos"
 local outBuf = ""
+local oWR = write
+local oPR = print
 
 local function split(str, splitter)
     local t = {}
@@ -21,8 +23,6 @@ local function compilebf(sender)
     shell.run("bfluac .bf-" .. sender .. " -printMem -yieldMore")
 
     chatBox.say("----RUNNING----")
-    oWR = write
-    oPR = print
 
     write = function(a) outBuf = outBuf .. a end
     print = function(a) print(outBuf) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
