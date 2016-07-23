@@ -25,7 +25,10 @@ local function compilebf(sender)
     chatBox.say("----RUNNING----")
 
     write = function(a) outBuf = outBuf .. a end
-    print = function(a) print(outBuf) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
+    print = function(a)
+        chatBox.say("§6" .. sender .. "> §f" .. outBuf)
+        outBuf = a
+    end
 
     local ok, err = pcall(runbfraw, sender)
 
@@ -36,7 +39,7 @@ local function compilebf(sender)
         errMsg = split(err, ":")
         errMsg = errMsg[#errMsg]
 
-        chatBox.say(("§6" .. sender .. ">§c" .. errMsg):gsub(" ", "§c"))
+        chatBox.say(("§6" .. sender .. ">§c" .. errMsg):gsub(" ", "§c "))
         if term.isColor() then term.setTextColor(colors.red) end
         print(err)
         if term.isColor() then term.setTextColor(colors.white) end
