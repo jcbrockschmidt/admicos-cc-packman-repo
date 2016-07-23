@@ -53,3 +53,14 @@ name = libcfg
     target = /usr/apis
     --link = http://www.computercraft.info/forums2/index.php?/topic/25456-libcfg-a-basic-configuration-api/
 end
+
+name = bfluac-chat
+	type = raw
+		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/bfluac-chat/bfluac-chat.lua
+		filename = bfluac-chat
+	category = brainfuck computronics-chat
+	version = 1.0.0
+	size = 2011
+	dependencies = admicos/bfluac
+    --link = http://www.computercraft.info/forums2/index.php?/topic/27197-bfluac-convert-brainfuck-programs-to-lua/
+end
