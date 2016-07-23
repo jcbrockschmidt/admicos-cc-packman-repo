@@ -14,23 +14,23 @@ local function split(str, splitter)
 end
 
 local function runbfraw(sender)
-    oWR = write
-    oPR = print
-
-    write = function(a) outBuf = outBuf .. a end
-    print = function(a) print(outBuf) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
-
     loadfile(".bf-" .. sender .. ".bf.lua")()
-
-    write = oWR
-    print = oPR
 end
 
 local function compilebf(sender)
     shell.run("bfluac .bf-" .. sender .. " -printMem -yieldMore")
 
     chatBox.say("----RUNNING----")
+    oWR = write
+    oPR = print
+
+    write = function(a) outBuf = outBuf .. a end
+    print = function(a) print(outBuf) chatBox.say("§6" .. sender .. "> §f" .. outBuf) outBuf = a end
+
     local ok, err = pcall(runbfraw, sender)
+
+    write = oWR
+    print = oPR
 
     if not ok then
         errMsg = split(err, ":")
