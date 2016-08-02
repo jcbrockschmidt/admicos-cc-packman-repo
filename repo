@@ -64,3 +64,14 @@ name = bfluac-chat
 	dependencies = admicos/bfluac
     --link = http://www.computercraft.info/forums2/index.php?/topic/27197-bfluac-convert-brainfuck-programs-to-lua/
 end
+
+name = apaste
+	type = raw
+		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/apaste/apaste.lua
+		filename = apaste
+	category = pastebin hosting
+	version = 1.0.0
+	size = 13376
+	dependencies = none
+	--link = http://46.101.102.147:5000/
+end
