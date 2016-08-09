@@ -51,3 +51,4 @@ else
 	print(shell.getRunningProgram() .. " <config file> <modify/add/remove> <entry> [value]")
 end
 loadedConfig = nil
+
