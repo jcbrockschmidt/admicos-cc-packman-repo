@@ -84,7 +84,7 @@ name = admios-beta
     category = os beta
     version = 2.0.0
     size = 18860
-    dependencies = none
+    dependencies = admicos/getopt
     target = /
     --link = www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
