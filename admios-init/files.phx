@@ -1,0 +1,8 @@
+url
+https://raw.githubusercontent.com/Admicos/AdmiOS/3.0.0-dev/startup /startup
+https://raw.githubusercontent.com/Admicos/AdmiOS/3.0.0-dev/system/boot.lua /system/boot.lua
+https://raw.githubusercontent.com/Admicos/AdmiOS/3.0.0-dev/system/api-autoload /system/api-autoload
+https://raw.githubusercontent.com/Admicos/AdmiOS/3.0.0-dev/system/init/01-compcheck.lua /system/init/01-compcheck.lua
+https://raw.githubusercontent.com/Admicos/AdmiOS/3.0.0-dev/system/init/01-packcheck.lua /system/init/01-packcheck.lua
+https://raw.githubusercontent.com/Admicos/AdmiOS/3.0.0-dev/system/init/01-tmpdir.lua /system/init/01-tmpdir.lua
+https://raw.githubusercontent.com/Admicos/AdmiOS/3.0.0-dev/etc/config.tbl /etc/config.tbl

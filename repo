@@ -76,19 +76,6 @@ name = apaste
 	--link = http://46.101.102.147:5000/
 end
 
-name = admios-beta
-    type = github
-		author = admicos
-		repository = AdmiOS
-        branch = 3.0.0-dev
-    category = os beta
-    version = 2.0.0
-    size = 18860
-    dependencies = admicos/getopt
-    target = /
-    --link = www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
-end
-
 name = getopt
 	type = raw
 		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/getopt/getopt.lua
@@ -99,4 +86,92 @@ name = getopt
 	dependencies = none
     target = /usr/apis
 	--link = http://www.computercraft.info/forums2/index.php?/topic/27355-getopt-easy-option-parsing/
+end
+
+name = pachax
+    type = raw
+        url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/upcoming-packages/pachax/pachax.lua
+        filename = pachax
+    category = utility
+    version = 1.0.0
+    size = 18860
+    dependencies = admicos/getopt
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
+
+name = admios-apis
+    type = meta
+    category = os
+    setup = /usr/bin/pachax -d admicos/admios-apis
+    version = 2.0.0
+    size = 18860
+    dependencies = admicos/pachax
+    target = /
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
+
+name = admios-desktop
+    type = meta
+    category = os
+    setup = /usr/bin/pachax -d admicos/admios-desktop
+    version = 2.0.0
+    size = 18860
+    dependencies = admicos/pachax
+    target = /
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
+
+name = admios-fsprotect
+    type = meta
+    category = os
+    setup = /usr/bin/pachax -d admicos/admios-fsprotect
+    version = 2.0.0
+    size = 18860
+    dependencies = admicos/pachax admicos/admios-login
+    target = /
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
+
+name = admios-homeskel
+    type = meta
+    category = os
+    setup = /usr/bin/pachax -d admicos/admios-homeskel
+    version = 2.0.0
+    size = 18860
+    dependencies = admicos/pachax
+    target = /
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
+
+name = admios-init
+    type = meta
+    category = os
+    setup = /usr/bin/pachax -d admicos/admios-init
+    version = 2.0.0
+    size = 18860
+    dependencies = admicos/pachax admicos/admios-fsprotect
+    target = /
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
+
+name = admios-login
+    type = meta
+    category = os
+    setup = /usr/bin/pachax -d admicos/admios-login
+    version = 2.0.0
+    size = 18860
+    dependencies = admicos/pachax
+    target = /
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
+
+name = admios
+    type = meta
+    category = os
+    setup = /usr/bin/pachax -d admicos/admios
+    version = 2.0.0
+    size = 18860
+    dependencies = admicos/pachax admicos/admios-apis admicos/admios-homeskel admicos/admios-init admicos/admios-login admicos/admios-fsprotect
+    target = /
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
