@@ -1,9 +1,9 @@
 --CC Getopt-- by Admicos (os.loadAPI edition)
 
 -- nil getopt.help(string programDescription, table optionsTable) !INTERNAL!
-function help(desc, options)
-	local helpStr = fs.getName(shell.getRunningProgram()) .. " -- " .. desc .. "\n"
-	.. "USAGE: " .. fs.getName(shell.getRunningProgram()) .. " [options] [args]\n"
+function help(name, desc, options)
+	local helpStr = name .. " -- " .. desc .. "\n"
+	.. "USAGE: " .. name .. " [options] [args]\n"
 
 	for k, v in pairs(options) do
 		helpStr = helpStr .. "\n--" .. k .. " (-" .. v[2] .. ")"
@@ -18,7 +18,7 @@ end
 
 -- table or nil getopt.init(string programDescription, table optionsTable, table args)
 -- NOTE: In optionsTable, you can't have --help or -h because getopt creates them for you.
-function init(desc, options, args)
+function init(name, desc, options, args)
 	local _resTbl = {}
 	local _isArg = false
 	local _optCnt = 1
@@ -26,7 +26,7 @@ function init(desc, options, args)
 	for i, v in ipairs(args) do
 		if v == "-h" or v == "--help" then
 			_resTbl = {}
-			getopt.help(desc, options)
+			getopt.help(name, desc, options)
 
 			return nil
 		end
