@@ -96,7 +96,7 @@ name = pachax
     version = 1.0.0
     size = 18860
     dependencies = admicos/getopt
-    --link = www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
 
 name = admios-apis
@@ -107,7 +107,7 @@ name = admios-apis
     size = 18860
     dependencies = admicos/pachax
     target = /
-    --link = www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
 
 name = admios-fsprotect
@@ -118,7 +118,7 @@ name = admios-fsprotect
     size = 18860
     dependencies = admicos/pachax admicos/admios-login
     target = /
-    --link = www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
 
 name = admios-homeskel
@@ -129,7 +129,7 @@ name = admios-homeskel
     size = 18860
     dependencies = admicos/pachax
     target = /
-    --link = www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
 
 name = admios-init
@@ -140,7 +140,7 @@ name = admios-init
     size = 18860
     dependencies = admicos/pachax admicos/admios-fsprotect
     target = /
-    --link = www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
 
 name = admios-login
@@ -151,7 +151,7 @@ name = admios-login
     size = 18860
     dependencies = admicos/pachax
     target = /
-    --link = www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
 
 name = admios
@@ -162,5 +162,5 @@ name = admios
     size = 18860
     dependencies = admicos/pachax admicos/admios-apis admicos/admios-homeskel admicos/admios-init admicos/admios-login admicos/admios-fsprotect
     target = /
-    --link = www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
