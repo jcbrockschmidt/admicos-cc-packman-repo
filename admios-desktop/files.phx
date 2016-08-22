@@ -1,2 +1,3 @@
 url
 https://raw.githubusercontent.com/Admicos/AdmiOS/3.0.0-dev/system/init/99-gui.lua /system/init/99-gui.lua
+https://raw.githubusercontent.com/Admicos/AdmiOS/3.0.0-dev/usr/bin/desktop /usr/bin/desktop

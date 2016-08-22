@@ -120,9 +120,9 @@ local function main(args)
     end
 end
 
+if not getopt then os.loadAPI("getopt") end
 if not stringStuff then
-    local stringStuff = {}
-
+    stringStuff = {}
     stringStuff.split = function(str, splitter)
     	local t = {}
     	local function helper(line) table.insert(t, line) return "" end
