@@ -90,7 +90,7 @@ end
 
 name = pachax
     type = raw
-        url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/pachax/pachax.lua
+        url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/upcoming-packages/pachax/pachax.lua
         filename = pachax
     category = utility
     version = 1.0.0
@@ -102,7 +102,7 @@ end
 name = admios-apis
     type = meta
     category = os
-    setup = pachax -d admicos/admios-apis
+    setup = /usr/bin/pachax -d admicos/admios-apis
     version = 2.0.0
     size = 18860
     dependencies = admicos/pachax
@@ -113,7 +113,7 @@ end
 name = admios-fsprotect
     type = meta
     category = os
-    setup = pachax -d admicos/admios-fsprotect
+    setup = /usr/bin/pachax -d admicos/admios-fsprotect
     version = 2.0.0
     size = 18860
     dependencies = admicos/pachax admicos/admios-login
@@ -124,7 +124,7 @@ end
 name = admios-homeskel
     type = meta
     category = os
-    setup = pachax -d admicos/admios-homeskel
+    setup = /usr/bin/pachax -d admicos/admios-homeskel
     version = 2.0.0
     size = 18860
     dependencies = admicos/pachax
@@ -135,7 +135,7 @@ end
 name = admios-init
     type = meta
     category = os
-    setup = pachax -d admicos/admios-init
+    setup = /usr/bin/pachax -d admicos/admios-init
     version = 2.0.0
     size = 18860
     dependencies = admicos/pachax admicos/admios-fsprotect
@@ -146,7 +146,7 @@ end
 name = admios-login
     type = meta
     category = os
-    setup = pachax -d admicos/admios-login
+    setup = /usr/bin/pachax -d admicos/admios-login
     version = 2.0.0
     size = 18860
     dependencies = admicos/pachax
@@ -155,9 +155,9 @@ name = admios-login
 end
 
 name = admios
-    type = mets
+    type = meta
     category = os
-    setup = pachax -d admicos/admios
+    setup = /usr/bin/pachax -d admicos/admios
     version = 2.0.0
     size = 18860
     dependencies = admicos/pachax admicos/admios-apis admicos/admios-homeskel admicos/admios-init admicos/admios-login admicos/admios-fsprotect
