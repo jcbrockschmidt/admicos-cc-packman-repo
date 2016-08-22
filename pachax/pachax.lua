@@ -74,6 +74,7 @@ local function repo_download_url(url, fname)
         if not fs.isDir(fs.getDir(fname)) then fs.makeDir(fs.getDir(fname)) end
         if not downloaded then error("Cannot download url:\n" .. url) end
 
+        if not fs.exists(fname) then fs.delete(fname) end
         local saved = fs.open(fname, "w")
             if not saved then error("Cannot save file:\n" .. fname) end
 
