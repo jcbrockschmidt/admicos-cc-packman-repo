@@ -90,7 +90,7 @@ end
 
 name = pachax
     type = raw
-        url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/upcoming-packages/pachax/pachax.lua
+        url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/pachax/pachax.lua
         filename = pachax
     category = utility
     version = 1.0.0
