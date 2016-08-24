@@ -183,6 +183,6 @@ name = admios-ash
 	category = brainfuck computronics-chat
 	version = 1.0.0
 	size = 2011
-	dependencies = admicos/getopt admicos/login
+	dependencies = admicos/getopt admicos/admios-login
     --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
