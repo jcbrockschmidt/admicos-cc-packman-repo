@@ -171,7 +171,7 @@ name = admios
     setup = /usr/bin/pachax -d admicos/admios
     version = 2.0.0
     size = 18860
-    dependencies = admicos/pachax admicos/admios-apis admicos/admios-homeskel admicos/admios-init admicos/admios-login admicos/admios-fsprotect
+    dependencies = admicos/pachax admicos/admios-ash admicos/admios-apis admicos/admios-homeskel admicos/admios-init admicos/admios-login admicos/admios-fsprotect
     target = /
     --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
@@ -180,9 +180,9 @@ name = admios-ash
 	type = raw
 		url = https://raw.githubusercontent.com/Admicos/AdmiOS/master/usr/bin/ash
 		filename = ash
-	category = brainfuck computronics-chat
+	category = shell admios
 	version = 1.0.0
 	size = 2011
-	dependencies = admicos/getopt admicos/admios-login
+	dependencies = admicos/getopt admicos/admios-login admicos/admios-apis
     --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
