@@ -175,3 +175,14 @@ name = admios
     target = /
     --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
+
+name = admios-ash
+	type = raw
+		url = https://raw.githubusercontent.com/Admicos/AdmiOS/master/usr/bin/ash
+		filename = ash
+	category = brainfuck computronics-chat
+	version = 1.0.0
+	size = 2011
+	dependencies = admicos/getopt admicos/login
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
