@@ -147,7 +147,7 @@ name = admios-init
     type = meta
     category = os
     setup = /usr/bin/pachax -d admicos/admios-init
-    version = 2.0.0
+    version = 2.1.0
     size = 18860
     dependencies = admicos/pachax admicos/admios-fsprotect
     target = /
@@ -184,5 +184,17 @@ name = admios-ash
 	version = 1.0.0
 	size = 2011
 	dependencies = admicos/getopt admicos/admios-login admicos/admios-apis
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
+
+name = admios-full
+    type = github
+        author = admicos
+        repository = AdmiOS
+        branch = master
+	category = admios os
+	version = 2.1.0
+	size = 2011
+	dependencies = admicos/getopt
     --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
