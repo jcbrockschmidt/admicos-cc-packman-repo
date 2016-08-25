@@ -193,6 +193,7 @@ name = admios-full
         repository = AdmiOS
         branch = master
 	category = admios os
+    target = /
 	version = 2.1.0
 	size = 2011
 	dependencies = admicos/getopt
