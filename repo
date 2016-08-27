@@ -199,3 +199,23 @@ name = admios-full
 	dependencies = admicos/getopt
     --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
+
+name = tntta
+    type = pastebin
+        url = 7tbpQp9t
+        file = tntta
+	category = game
+	version = 1.0.0
+	dependencies = none
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
+
+name = tntta-edit
+    type = pastebin
+        url = z6N2ivxm
+        file = tntta-edit
+	category = game
+	version = 1.0.0
+	dependencies = none
+    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
