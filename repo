@@ -206,6 +206,7 @@ name = tntta
         filename = tntta
     category = game
     version = 1.0.0
+    size = 1000
     dependencies = none
     --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
@@ -216,6 +217,7 @@ name = tntta-edit
         filename = tntta-edit
     category = game
     version = 1.0.0
+    size = 1000
     dependencies = none
     --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
 end
@@ -226,6 +228,7 @@ name = newLibCFG
         filename = newLibCFG
     category = api configuration
     version = 1.0.0
+    size = 1000
     dependencies = none
     --link = http://www.computercraft.info/forums2/index.php?/topic/27494-newlibcfg-basic-configuration-api/
 end
