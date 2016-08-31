@@ -203,7 +203,7 @@ end
 name = tntta
     type = pastebin
         url = 7tbpQp9t
-        file = tntta
+        filename = tntta
 	category = game
 	version = 1.0.0
 	dependencies = none
@@ -213,9 +213,19 @@ end
 name = tntta-edit
     type = pastebin
         url = z6N2ivxm
-        file = tntta-edit
+        filename = tntta-edit
 	category = game
 	version = 1.0.0
 	dependencies = none
     --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+end
+
+name = newLibCFG
+    type = pastebin
+        url = e4hJ32cS
+        filename = newLibCFG
+	category = api configuration
+	version = 1.0.0
+	dependencies = none
+    --link = http://www.computercraft.info/forums2/index.php?/topic/27494-newlibcfg-basic-configuration-api/
 end
