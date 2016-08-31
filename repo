@@ -230,5 +230,6 @@ name = newLibCFG
     version = 1.0.0
     size = 1000
     dependencies = none
+    target = /usr/apis
     --link = http://www.computercraft.info/forums2/index.php?/topic/27494-newlibcfg-basic-configuration-api/
 end
