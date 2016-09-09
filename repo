@@ -109,7 +109,7 @@ name = tntta
     version = 1.0.0
     size = 1000
     dependencies = none
-    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/27463-try-not-to-touch-anything/
 end
 
 name = tntta-edit
@@ -120,7 +120,7 @@ name = tntta-edit
     version = 1.0.0
     size = 1000
     dependencies = none
-    --link = http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/27463-try-not-to-touch-anything/
 end
 
 name = newLibCFG

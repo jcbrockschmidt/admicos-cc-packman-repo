@@ -11,8 +11,8 @@ My repo for [lyqyd/cc-packman](https://github.com/lyqyd/cc-packman)
 * [apaste](http://46.101.102.147:5000/) 1.0.0
 * [getopt](http://www.computercraft.info/forums2/index.php?/topic/27355-getopt-easy-option-parsing/) 1.0.1
 * [admios-full](http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/) 2.1.1
-* [tntta](http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/) 1.0.0
-* [tntta-edit](http://www.computercraft.info/forums2/index.php?/topic/25411-admios-rw/) 1.0.0
+* [tntta](http://www.computercraft.info/forums2/index.php?/topic/27463-try-not-to-touch-anything/) 1.0.0
+* [tntta-edit](http://www.computercraft.info/forums2/index.php?/topic/27463-try-not-to-touch-anything/) 1.0.0
 * [newLibCFG](http://www.computercraft.info/forums2/index.php?/topic/27494-newlibcfg-basic-configuration-api/) 1.0.0
 
 Also, the [LICENSE](/LICENSE) file applies to all the files in this repo, unless specified otherwise.
