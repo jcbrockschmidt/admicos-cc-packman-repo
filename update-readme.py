@@ -9,7 +9,7 @@ My repo for [lyqyd/cc-packman](https://github.com/lyqyd/cc-packman)
 
 ## Currently Includes:
 """
-readme_footer = "Also, the [LICENSE](/LICENSE) file applies to all the files" \
+readme_footer = "Also, the [LICENSE](/LICENSE) file applies to all the files " \
     "in this repo unless specified otherwise."
 
 

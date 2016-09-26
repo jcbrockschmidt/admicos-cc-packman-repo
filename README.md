@@ -15,4 +15,4 @@ My repo for [lyqyd/cc-packman](https://github.com/lyqyd/cc-packman)
 * [tntta-edit](http://www.computercraft.info/forums2/index.php?/topic/27463-try-not-to-touch-anything/) 1.0.0
 * [newLibCFG](http://www.computercraft.info/forums2/index.php?/topic/27494-newlibcfg-basic-configuration-api/) 1.0.0
 
-Also, the [LICENSE](/LICENSE) file applies to all the filesin this repo unless specified otherwise.
+Also, the [LICENSE](/LICENSE) file applies to all the files in this repo unless specified otherwise.
