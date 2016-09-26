@@ -5,7 +5,7 @@ import re
 
 repoFile = "repo"
 readme_header = """# Admicos's packman repository
-My repo for [lyqyd/cc-packman](https://github.com/lyqyd/cc-packman)
+My repo for [lyqyd/cc-packman](https://github.com/lyqyd/cc-packman)  
 More user friendly interface [here](https://admicos.github.io/cc-packman-repo/)
 
 ## Currently Includes:
