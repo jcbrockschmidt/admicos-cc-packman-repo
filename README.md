@@ -1,5 +1,6 @@
 # Admicos's packman repository
 My repo for [lyqyd/cc-packman](https://github.com/lyqyd/cc-packman)
+More user friendly interface [here](https://admicos.github.io/cc-packman-repo/)
 
 ## Currently Includes:
 * [aconf](http://www.computercraft.info/forums2/index.php?/topic/25456-libcfg-a-basic-configuration-api/) 1.0.0
