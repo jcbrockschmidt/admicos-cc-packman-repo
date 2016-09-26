@@ -55,7 +55,6 @@ function preview(pkg)
         return;
     }
 
-    alert(_url);
     $.get(_url, function(data) {
         mcon.html(prev_modal.format(pkg["name"], data));
         Prism.highlightAll(true, function(){
@@ -80,6 +79,4 @@ $(document).ready(function()
 
     loader.css({"display": "none"});
     pkgs.html(pkg_html);
-
-    alert(pkg_html);
 });
