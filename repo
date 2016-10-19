@@ -143,5 +143,5 @@ name = luapp
     version = 1.0.0
     size = 1000
     dependencies = admicos/getopt
-    --link = http://www.computercraft.info/forums2/index.php?/topic/27463-try-not-to-touch-anything/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/27756-luapp-a-lua-preprocessor/
 end
