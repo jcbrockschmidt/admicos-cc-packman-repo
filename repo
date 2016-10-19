@@ -134,3 +134,14 @@ name = newLibCFG
     target = /usr/apis
     --link = http://www.computercraft.info/forums2/index.php?/topic/27494-newlibcfg-basic-configuration-api/
 end
+
+name = luapp
+    type = pastebin
+        url = Y39vjirG
+        filename = luapp
+    category = utility preprocessor
+    version = 1.0.0
+    size = 1000
+    dependencies = admicos/getopt
+    --link = http://www.computercraft.info/forums2/index.php?/topic/27463-try-not-to-touch-anything/
+end
