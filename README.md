@@ -15,6 +15,6 @@ More user friendly interface [here](https://admicos.github.io/cc-packman-repo/)
 * [tntta](http://www.computercraft.info/forums2/index.php?/topic/27463-try-not-to-touch-anything/) 1.0.0
 * [tntta-edit](http://www.computercraft.info/forums2/index.php?/topic/27463-try-not-to-touch-anything/) 1.0.0
 * [newLibCFG](http://www.computercraft.info/forums2/index.php?/topic/27494-newlibcfg-basic-configuration-api/) 1.0.0
-* [luapp](http://www.computercraft.info/forums2/index.php?/topic/27756-luapp-a-lua-preprocessor/) 1.0.0
+* [luapp](http://www.computercraft.info/forums2/index.php?/topic/27756-luapp-a-lua-preprocessor/) 1.2.0
 
 Also, the [LICENSE](/LICENSE) file applies to all the files in this repo unless specified otherwise.
