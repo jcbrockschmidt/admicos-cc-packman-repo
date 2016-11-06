@@ -147,11 +147,11 @@ name = luapp
 end
 
 name = luapp-includes-getopt
-    type = pastebin
-        url = VyGBMX1d
+    type = raw
+        url = https://raw.githubusercontent.com/Admicos/luapp/master/pub_incl/getopt.lua
         filename = getopt.inc
     category = api args luapp-includes
-    version = 1.2.0
+    version = 1.0.0
     size = 1000
     dependencies = admicos/luapp
     target = /etc/luapp/include
