@@ -157,3 +157,26 @@ name = luapp-includes-getopt
     target = /etc/luapp/include
     --link = http://www.computercraft.info/forums2/index.php?/topic/27355-getopt-easy-option-parsing/
 end
+
+name = ghv
+    type = raw
+        url = https://raw.githubusercontent.com/Admicos/ghv/master/ghv_build
+        filename = https://raw.githubusercontent.com/Admicos/ghv/master/ghv_build
+    category = documentation
+    version = 1.0.0
+    size = 1000
+    dependencies = admicos/getopt admicos/ghv-ghv
+    --link = http://www.computercraft.info/forums2/index.php?/topic/27898-
+end
+
+name = ghv-ghv
+    type = raw
+        url = https://raw.githubusercontent.com/Admicos/ghv/master/ghv.ghv
+        filename = ghv
+    category = ghv documentation
+    version = 1.0.0
+    size = 1000
+    dependencies = admicos/ghv
+    target = /etc/ghv/
+    --link = http://www.computercraft.info/forums2/index.php?/topic/27898-
+end
