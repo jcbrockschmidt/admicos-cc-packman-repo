@@ -161,7 +161,7 @@ end
 name = ghv
     type = raw
         url = https://raw.githubusercontent.com/Admicos/ghv/master/ghv_build
-        filename = https://raw.githubusercontent.com/Admicos/ghv/master/ghv_build
+        filename = ghv
     category = documentation
     version = 1.0.0
     size = 1000
