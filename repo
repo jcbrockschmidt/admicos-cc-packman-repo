@@ -136,8 +136,8 @@ name = newLibCFG
 end
 
 name = luapp
-    type = pastebin
-        url = Y39vjirG
+    type = raw
+        url = https://raw.githubusercontent.com/Admicos/luapp/master/luapp_build
         filename = luapp
     category = utility preprocessor
     version = 1.3.0
