@@ -180,3 +180,14 @@ name = ghv-ghv
     target = /etc/ghv/
     --link = http://www.computercraft.info/forums2/index.php?/topic/27898-
 end
+
+name = reqpack
+    type = pastebin
+        url = QMBZBmGd
+        filename = reqpack
+    category = packaging build
+    version = 1.0.0
+    size = 1000
+    dependencies = none
+    --link = http://www.computercraft.info/forums2/index.php?/topic/29613-
+end
