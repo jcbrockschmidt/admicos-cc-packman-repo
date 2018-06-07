@@ -182,11 +182,11 @@ name = ghv-ghv
 end
 
 name = reqpack
-    type = pastebin
-        url = QMBZBmGd
+    type = raw
+        url = https://gitlab.com/admicos/reqpack/raw/v2/reqpack.lua
         filename = reqpack
     category = packaging build
-    version = 1.0.0
+    version = 2
     size = 1000
     dependencies = none
     --link = http://www.computercraft.info/forums2/index.php?/topic/29613-
