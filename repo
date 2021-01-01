@@ -1,6 +1,6 @@
 name = aconf
     type = raw
-		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/aconf/aconf.lua
+		url = https://git.ebc.li/archive/cc-packman-repo/raw/branch/master/aconf/aconf.lua
 		filename = aconf
     category = utility configuration
     version = 1.0.0
@@ -11,7 +11,7 @@ end
 
 name = bfluac
     type = raw
-		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/bfluac/bfluac.lua
+		url = https://git.ebc.li/archive/cc-packman-repo/raw/branch/master/bfluac/bfluac.lua
 		filename = bfluac
     category = utility brainfuck
     version = 1.0.2
@@ -22,7 +22,7 @@ end
 
 name = bfluac-helloworld
     type = raw
-		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/bfluac-helloworld/bfluac-helloworld.lua
+		url = https://git.ebc.li/archive/cc-packman-repo/raw/branch/master/bfluac-helloworld/bfluac-helloworld.lua
 		filename = bfluac-helloworld
     category = brainfuck
     version = 1.0.0
@@ -33,7 +33,7 @@ end
 
 name = bundel
     type = raw
-		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/bundel/bundel.lua
+		url = https://git.ebc.li/archive/cc-packman-repo/raw/branch/master/bundel/bundel.lua
 		filename = bundel
     category = utility bundle
     version = 1.0.0
@@ -44,7 +44,7 @@ end
 
 name = libcfg
     type = raw
-		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/libCFG/libCFG
+		url = https://git.ebc.li/archive/cc-packman-repo/raw/branch/master/libCFG/libCFG
 		filename = libCFG
     category = api config
     version = 1.0.0
@@ -56,7 +56,7 @@ end
 
 name = bfluac-chat
 	type = raw
-		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/bfluac-chat/bfluac-chat.lua
+		url = https://git.ebc.li/archive/cc-packman-repo/raw/branch/master/bfluac-chat/bfluac-chat.lua
 		filename = bfluac-chat
 	category = brainfuck computronics-chat
 	version = 1.0.0
@@ -67,7 +67,7 @@ end
 
 name = apaste
 	type = raw
-		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/apaste/apaste.lua
+		url = https://git.ebc.li/archive/cc-packman-repo/raw/branch/master/apaste/apaste.lua
 		filename = apaste
 	category = pastebin hosting
 	version = 1.0.0
@@ -78,7 +78,7 @@ end
 
 name = getopt
 	type = raw
-		url = https://raw.githubusercontent.com/Admicos/cc-packman-repo/master/getopt/getopt.lua
+		url = https://git.ebc.li/archive/cc-packman-repo/raw/branch/master/getopt/getopt.lua
 		filename = getopt
 	category = api args
 	version = 1.0.1
